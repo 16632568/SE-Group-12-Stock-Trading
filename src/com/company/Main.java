@@ -13,7 +13,7 @@ package com.company;
 public class Main
 {
     public static void main(String[] args) throws IOException {
-
+        System.out.println("System starts!");
         float wallet; //Variables for the wallet and stock amounts
         int ibm,
             microsoft,
@@ -25,27 +25,13 @@ public class Main
             ea,
             tesco,
             google;
-        String filename = "inventory.txt"; //inventory file
-        String line = null;
+        String filename = "inventory1.txt"; //inventory file
+        String line;
 
-        //try  //don't remember what this try was for... help
-        //{
-         //FileReader fileReader = new FileReader(filename);
-         //BufferedReader bufferedReader = new BufferedReader(fileReader);
-
-         //while((line = bufferedReader.readline()) != null)
-         //{
-         //
-         //}
-        //}
-        //catch (Exception e)
-        //{
-        //
-        //}
 
         try
         {
-
+			
             Socket socket = new Socket("10.5.35.152", 5000); //IP of the server
             System.out.println("Success"); //print success when connected
 
